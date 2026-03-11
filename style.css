@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #0d1117;
+    --secondary-color: #eeeeee;
+    --primary-font: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* main, #input-container, #results, #repo-container, #repo-output, #results p{
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+} */
+
+article * {
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 1px; */
+
+    text-align: left;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 4rem 25rem;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+main {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    border-radius: 0.5rem;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.5);
+
+    padding: 1.5rem 0rem 2rem;
+}
+
+h1 {
+    margin-bottom: 0.25rem;
+
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+article {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.5);
+
+    min-height: 6rem;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem 1.75rem;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid var(--primary-color);
+}
+
+#placeholder {
+    text-align: center;
+    margin: auto 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#placeholder, #repo-name {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+#repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#repo-name {
+    margin-bottom: 0.25rem;
+}
+
+#repo-link {
+    font-size: 1rem;
+    color: var(--primary-color);
+
+    margin-top: 0.15rem;
+}
+
+#repo-desc {
+    margin-bottom: 1rem;
+
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+
+#repo-stats {
+    display: flex;
+    justify-content: space-between;
+    
+
+    font-size: 0.85rem;
+    color: rgba(13, 17, 23, 0.7);
+}
+
+span {
+    font-size: 0.875rem;
+}
+
+span > i {
+    margin-right: 0.25rem;
+    margin-bottom: 0.15rem;
+    font-size: 0.75rem;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#input-field{
+    display: flex;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
+
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}
+
+#input-container {
+    width: 50%;
+    margin: 0 auto 1.5rem;
+}
+
+
+#input-container input {
+    border-style: none;
+    background-color: transparent;
+
+    width: 100%
+}
+
+#input-container button {
+    border: none;
+    background: transparent;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+#results {
+    text-align: left;
+    background-color: #212935;
+    color: var(--secondary-color);
+}
+
+#results p {
+    padding: 0.35rem 1rem;
+
+    font-size: 0.85rem;
+}
+
+#results p:hover {
+    cursor: pointer;
+    background-color: #394557;
+}
