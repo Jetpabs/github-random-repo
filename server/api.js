@@ -3,7 +3,8 @@ async function getRepos(language) {
 
     const res = await fetch(apiUrl, {
         headers: {
-            'Accept': 'application/vnd.github.+json'
+            'Accept': 'application/vnd.github.+json',
+            'Authorization': `Bearer ${process.env.API_KEY}`
         }
     });
 
